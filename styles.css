@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #333;
+  color: white;
+}
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Pseudo class example */
+td:hover {
+  background-color: #dff0d8;
+  cursor: pointer;
+}
