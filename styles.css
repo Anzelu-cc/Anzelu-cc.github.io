@@ -1,62 +1,62 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
   text-align: center;
-  padding: 20px;
 }
-h1 {
-  margin-bottom: 40px;
-}
-section {
-  margin-bottom: 50px;
-}
-/* Penguin - Oval shape and grayscale */
-.penguin {
-  width: 300px;
-  filter: grayscale(100%);
-  border-radius: 50% / 40%;
-  border: 3px solid #ccc;
-}
-/* Football Field + Overlay */
-.football-container {
+.container {
   position: relative;
   display: inline-block;
+  margin: 20px;
+}
+/* 1. Dinosaur effect */
+.dinosaur {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.dinosaur:hover {
+  transform: scale(1.1) rotate(-3deg);
+  filter: hue-rotate(210deg);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+}
+/* 2. Butterfly tint effect */
+.butterfly {
+  filter: hue-rotate(190deg) saturate(120%);
+}
+/* 3. Theater Stage with Text Overlay */
+.theater .overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+/* 4. Seagull soft effect */
+.seagull {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  filter: brightness(110%);
+}
+/* 5. Penguins with oval frame */
+.penguins {
+  border-radius: 50% / 40%;
+  border: 6px solid #f3f3f3;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+/* 6. Football field with overlay */
+.football-container {
+  position: relative;
 }
 .field {
+  display: block;
   width: 300px;
-  border: 2px solid #000;
 }
-.overlay {
+.tic-tac-toe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0.8;
-}
-/* Dinosaur - Rotation and shadow */
-.dinosaur {
-  width: 200px;
-  transform: rotate(-10deg);
-  filter: drop-shadow(10px 10px 10px gray);
-}
-/* Seagull - Slight skew */
-.seagull {
-  width: 300px;
-  transform: skewX(-5deg);
-  border: 2px solid #aaa;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-}
-/* Butterfly - bright foreground effect */
-.butterfly {
-  width: 300px;
-  filter: brightness(1.2) contrast(1.1);
-  border: 4px double #89f;
-  border-radius: 10px;
-}
-/* Theater Stage - tinted red with shadow */
-.theater {
-  width: 300px;
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
-  filter: sepia(20%) brightness(1.1);
-  border: 3px solid #900;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
 }
