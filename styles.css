@@ -1,62 +1,62 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   text-align: center;
-  background-color: #f0f0f0;
+  padding: 20px;
 }
 h1 {
-  margin-top: 20px;
+  margin-bottom: 40px;
 }
 section {
-  margin: 40px 0;
+  margin-bottom: 50px;
 }
-img {
-  max-width: 80%;
-  height: auto;
-  transition: all 0.4s ease;
+/* Penguin - Oval shape and grayscale */
+.penguin {
+  width: 300px;
+  filter: grayscale(100%);
+  border-radius: 50% / 40%;
+  border: 3px solid #ccc;
 }
-/* Theater Stage */
-.theater {
-  filter: sepia(80%) brightness(1.1);
-  transform: scale(1.05) rotate(-2deg);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-/* Football Field with Tic Tac Toe overlay */
+/* Football Field + Overlay */
 .football-container {
   position: relative;
   display: inline-block;
 }
 .field {
-  filter: saturate(1.2);
-  border-radius: 15px;
+  width: 300px;
+  border: 2px solid #000;
 }
 .overlay {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
   opacity: 0.8;
 }
-/* Dinosaur */
+/* Dinosaur - Rotation and shadow */
 .dinosaur {
-  filter: grayscale(100%) contrast(120%);
-  transform: scale(1.1) rotate(5deg);
-  border-radius: 20px;
+  width: 200px;
+  transform: rotate(-10deg);
+  filter: drop-shadow(10px 10px 10px gray);
 }
-/* Butterfly */
-.butterfly {
-  filter: hue-rotate(90deg);
-  transform: scale(1.2);
-  border: 5px dashed #ff69b4;
-}
-/* Penguin */
-.penguin {
-  filter: brightness(0.9) drop-shadow(10px 10px 10px gray);
-  clip-path: circle(45%);
-}
-/* Seagull */
+/* Seagull - Slight skew */
 .seagull {
-  filter: blur(1px);
-  transform: skewY(5deg);
-  border: 4px solid #333;
+  width: 300px;
+  transform: skewX(-5deg);
+  border: 2px solid #aaa;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+/* Butterfly - bright foreground effect */
+.butterfly {
+  width: 300px;
+  filter: brightness(1.2) contrast(1.1);
+  border: 4px double #89f;
   border-radius: 10px;
+}
+/* Theater Stage - tinted red with shadow */
+.theater {
+  width: 300px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+  filter: sepia(20%) brightness(1.1);
+  border: 3px solid #900;
 }
