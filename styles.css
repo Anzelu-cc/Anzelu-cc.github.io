@@ -1,67 +1,43 @@
-body {
-  background: black;
-  color: white;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-.container {
-  display: inline-block;
-  margin: 20px;
-  position: relative;
-}
-/* Dinosaur — blue tint + shadow */
-.dinosaur {
-  filter: hue-rotate(200deg) saturate(180%);
-  transform: scale(1.1) rotate(-3deg);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-/* Butterfly — tint & glow */
-.butterfly {
-  filter: hue-rotate(120deg) brightness(1.2);
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
-}
-/* Theater Stage — text overlay */
-.theater .overlay {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  text-shadow: 2px 2px 6px black;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-/* Seagull — bright with soft border */
-.seagull {
-  filter: brightness(1.15);
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(100, 100, 255, 0.3);
-}
-/* Penguins — oval frame */
-.penguins {
-  border-radius: 50% / 40%;
-  border: 6px solid #eee;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  padding: 5px;
-}
-/* Football + Tic Tac Toe Overlay */
-.football-container {
-  position: relative;
-}
-.field {
-  display: block;
-  width: 300px;
-}
-.tic-tac-toe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.85;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Effects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS3 Image Transformations</h1>
+
+  <!-- Dinosaur -->
+  <div class="container">
+    <img src="dinosaur.jpg" alt="Dinosaur" class="dinosaur">
+  </div>
+
+  <!-- Butterfly -->
+  <div class="container">
+    <img src="butterfly.jpg" alt="Butterfly" class="butterfly">
+  </div>
+
+  <!-- Theater Stage -->
+  <div class="container theater">
+    <img src="theater_stage.jpg" alt="Theater Stage">
+    <div class="overlay">Presenting</div>
+  </div>
+
+  <!-- Seagull -->
+  <div class="container">
+    <img src="seagull.jpg" alt="Seagull" class="seagull">
+  </div>
+
+  <!-- Penguins -->
+  <div class="container">
+    <img src="penguins.jpg" alt="Penguins" class="penguins">
+  </div>
+
+  <!-- Football + Tic Tac Toe -->
+  <div class="container football-container">
+    <img src="football_field.jpg" alt="Football Field" class="field">
+    <img src="tic-tac-toe.png" alt="Tic Tac Toe" class="tic-tac-toe">
+  </div>
+</body>
+</html>
