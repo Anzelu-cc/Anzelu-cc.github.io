@@ -6,14 +6,12 @@ body {
   padding: 20px;
   animation: fadeIn 1.5s ease-in;
 }
-
 .page-title {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 30px;
   color: #333;
 }
-
 /* Title animation */
 @keyframes fadeIn {
   0% {
@@ -25,14 +23,12 @@ body {
     transform: translateY(0);
   }
 }
-
 /* Card container grid layout */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
-
 /* Card container with 3D flip */
 .card {
   position: relative;
@@ -42,12 +38,10 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
-
 /* Flip on hover */
 .card:hover {
   transform: rotateY(180deg);
 }
-
 /* Front and back card faces */
 .card .front,
 .card .back {
@@ -65,13 +59,11 @@ body {
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 /* Front face */
 .card .front {
   background-color: #3498db;
   transform: rotateY(0deg);
 }
-
 /* Back face */
 .card .back {
   background-color: #2ecc71;
